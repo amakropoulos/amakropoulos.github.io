@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+  BrainBrowser: Web-based Neurological Visualization Tools
+  (https://brainbrowser.cbrain.mcgill.ca)
+
+  Copyright (C) 2011
+  The Royal Institution for the Advancement of Learning
+  McGill University
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU Affero General Public License for more details.
+
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+  Author: Tarek Sherif <tsherif@gmail.com> (http://tareksherif.ca/)
+  Author: Nicolas Kassis
+-->
+
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link type="text/css" href="css/ui-darkness/jquery-ui.css" rel="Stylesheet" />
+    <link type="text/css" href="css/common.css" rel="Stylesheet" />
+    <link type="text/css" href="css/surface-viewer-demo.css" rel="Stylesheet" />
+    <title>BrainBrowser Surface Viewer</title>
+  </head>
+  <body>
+    <div id="display">
+      <a id="control-button" class="button">Hide Controls</a>
+      <div id="loading" style="display: none"><img src="img/ajax-loader.gif" /></div>
+      <div id="brainbrowser"></div>
+      <div id="controls" >
+        <div id="controls-content">
+          <div id="examples" class="box full_box">
+            <h3>Age (weeks)</h3>
+		<table><tr><td><span id="range" name="range" >38</span></td><td>&nbsp;</td>
+		<td><div id="ageslider" name="ageslider" style="width:200px"></div></td></tr></table>
+
+          </div>
+          <div class="combo_box">
+            <div id="views" class="box half_box" >
+              <h4>Views:</h4>
+              <div id="hem_views_1" class="half_box">
+                <input id="hem_superior" class="view_button" type="radio" name="hem_view" value="superior">Superior<br />
+                <input id="hem_medial" class="view_button" type="radio" name="hem_view" value="medial">Medial<br />
+                <input id="hem_anterior" class="view_button" type="radio" name="hem_view" value="anterior">Anterior
+              </div>
+              <div id="hem_views_2" class="half_box">
+                <input id="hem_inferior"  class="view_button" type="radio" name="hem_view" value="inferior">Inferior<br />
+                <input id="hem_lateral"   class="view_button" type="radio" name="hem_view" value="lateral" checked="true">Lateral<br />
+                <input id="hem_posterior" class="view_button" type="radio" name="hem_view" value="posterior">Posterior
+              </div>
+              <p>
+                Autorotate:
+                <span id="autorotate-controls" class="buttonset">
+                  <input type="checkbox"  id="autorotateX"><label for="autorotateX">X</label>
+                  <input type="checkbox"  id="autorotateY"><label for="autorotateY">Y</label>
+                  <input type="checkbox"  id="autorotateZ" checked="true"><label for="autorotateZ">Z</label>
+                </span>
+              </p>
+              <p>
+                  <div id="pick-label-wrapper" style="display:none">Region: <span id="pick-label" class="pick-data"></span></div>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- all the scripts -->
+    <script src="js/jquery-1.6.4.min.js"></script>
+    <script src="js/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/brainbrowser/brainbrowser.js"></script>
+    <script src="js/brainbrowser/core/tree-store.js"></script>
+    <script src="js/brainbrowser/lib/config.js"></script>
+    <script src="js/brainbrowser/lib/utils.js"></script>
+    <script src="js/brainbrowser/lib/events.js"></script>
+    <script src="js/brainbrowser/lib/loader.js"></script>
+    <script src="js/brainbrowser/lib/color-map.js"></script>
+    <script src="js/brainbrowser/surface-viewer.js"></script>
+    <script src="js/brainbrowser/surface-viewer/lib/three.js"></script>
+    <script src="js/brainbrowser/surface-viewer/lib/parse-intensity-data.js"></script>
+    <script src="js/brainbrowser/surface-viewer/modules/annotations.js"></script>
+    <script src="js/brainbrowser/surface-viewer/modules/color.js"></script>
+    <script src="js/brainbrowser/surface-viewer/modules/loading.js"></script>
+    <script src="js/brainbrowser/surface-viewer/modules/rendering.js"></script>
+    <script src="js/brainbrowser/surface-viewer/modules/views.js"></script>
+    <script src="surface-viewer-demo.config.js"></script>
+    <script src="js/AnaglyphEffect.js"></script>
+    <script src="surface-viewer-demo.js"></script>
+
+  </body>
+</html>

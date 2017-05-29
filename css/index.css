@@ -1,0 +1,19 @@
+.tab-content.current{
+	display: inherit;
+}
+
+.tab-content{
+	display: none;
+	padding: 15px;
+} 
+
+
+#biowrapper {width:100%; position:relative;}
+.bioleft { margin:0; padding:0; color:white;  float:left; width:17%; margin-top:0px; margin-bottom:10px; margin-left:10px; margin-right:10px; min-width: 100px}
+.bioright {  margin:0; padding:0; color:white; float:right; text-align:right width:80%; margin-top:0px; margin-bottom:10px; margin-left:10px; margin-right:10px}
+#social-br {  display:none;}
+
+
+@media (max-width: 410px) {
+	#social-br {  display:inline;}
+}

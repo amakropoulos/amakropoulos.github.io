@@ -1,0 +1,17 @@
+'Non Cortical'	1
+'Anterior temporal lobe medial'	2
+'Anterior temporal lobe lateral'	3
+'Gyri parahippocampalis et ambiens anterior'	4
+'Superior temporal gyrus middle'	5
+'Medial and inferior temporal gyri anterior'	6
+'Lateral occipitotemporal gyrus gyrus fusiformis anterior'	7
+'Insula'	8
+'Occipital lobe'	9
+'Gyri parahippocampalis et ambiens posterior'	10
+'Lateral occipitotemporal gyrus gyrus fusiformis posterior'	11
+'Medial and inferior temporal gyri posterior'	12
+'Superior temporal gyrus posterior'	13
+'Cingulate gyrus anterior'	14
+'Cingulate gyrus posterior'	15
+'Frontal lobe'	16
+'Parietal lobe'	17
