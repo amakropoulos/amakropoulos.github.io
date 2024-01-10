@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
  var w = window.innerWidth;
  var displaybrain = true;
  if (w<767){
@@ -79,12 +78,11 @@ $(document).ready(function(){
 	$('#stuck_container').tmStickUp({});
 });
 
+$(document).ready(function(){
+  // google analytics
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-99005688-1', 'auto');
-ga('send', 'pageview');
-
+  gtag('config', 'G-211ENWEWPL');
+});
